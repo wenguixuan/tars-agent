@@ -1,4 +1,4 @@
 default_model:
   model_name: qwen-turbo
   base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
-  api_key: sk-aceba95709bd476484b2f9f8321f2639
+  api_key: xxx

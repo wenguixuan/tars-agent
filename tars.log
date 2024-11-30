@@ -11,3 +11,173 @@
 2024-09-07 18:11:23.156 | INFO     | utils.Log:info:16 - {'default_model': {'model_name': 'qwen-turbo', 'base_url': 'https://dashscope.aliyuncs.com/compatible-mode/v1', 'api_key': 'sk-8bf07486b6bd4f339fcaa59b7286a3ed'}}
 2024-09-07 18:11:23.266 | INFO     | utils.Log:info:16 - <bound method TarsBase.init_brain of <agents.TarsBase.TarsBase object at 0x1027df6d0>>
 2024-09-07 18:11:33.412 | INFO     | utils.Log:info:16 - {'title': '探索未知的勇气与智慧', 'keyword': ['宇宙探索', '未知领域', '科技进步'], 'paragraphs': ['在人类的历史长河中，对未知世界的探索一直是我们不懈追求的目标。无论是古代文明对星空的仰望，还是现代科技驱动下的太空旅行，探索始终是推动社会进步的重要力量。从嫦娥四号揭开月背的神秘面纱，到天问一号飞向深空，这些壮举不仅展现了人类对于宇宙奥秘的渴望，更体现了我们面对未知世界时的勇气与智慧。', '勇气是探索未知的前提。面对未知，人类往往需要克服内心的恐惧和不确定性，勇往直前。嫦娥四号的发射，需要科研人员在技术、设备、策略等多方面的创新和突破，以及对未知风险的勇敢承担。这种勇气，不仅仅是对未知的无畏，更是对科学精神的坚守。', '智慧则是探索未知的关键。在科技日新月异的今天，每一次探索都离不开精密的计算、先进的技术和深入的理论研究。天问一号的成功着陆火星，背后是全球领先的导航系统、精准的轨道控制技术，以及对火星环境的精确模拟与预测。智慧不仅体现在对已有知识的运用上，更体现在如何创新方法，解决新的问题。', '探索未知的过程也是人类自我认知深化的过程。通过探索外太空，我们不仅了解了宇宙的广阔与复杂，也重新审视了地球的位置和人类自身的角色。这种自我认知的提升，有助于我们更加理性地面对现实，更加深刻地理解生命的意义。', '总的来说，探索未知不仅是对自然界的探索，更是对人类自身潜能的挖掘。它激发了我们的创造力，推动了科技的发展，丰富了我们的文化，同时也让我们更加珍惜地球这个家园。在未来的探索道路上，我们应当继续秉持勇气与智慧，勇敢地面对每一个未知的挑战，不断开拓人类文明的新篇章。']}
+2024-11-30 14:24:21.576 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-11-30 14:24:21.576 | INFO     | utils.Log:info:16 - {'default_model': {'model_name': 'qwen-turbo', 'base_url': 'https://dashscope.aliyuncs.com/compatible-mode/v1', 'api_key': 'xxx'}}
+2024-11-30 14:24:21.635 | INFO     | utils.Log:info:16 - <bound method TarsBase.init_brain of <agents.TarsBase.TarsBase object at 0x101047670>>
+2024-11-30 14:24:22.002 | INFO     | utils.Log:info:16 - None
+2024-11-30 14:33:22.239 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-11-30 14:33:22.239 | INFO     | utils.Log:info:16 - {'default_model': {'model_name': 'qwen-turbo', 'base_url': 'https://dashscope.aliyuncs.com/compatible-mode/v1', 'api_key': 'sk-8bf07486b6bd4f339fcaa59b7286a3ed'}}
+2024-11-30 14:33:22.302 | INFO     | utils.Log:info:16 - <bound method TarsBase.init_brain of <agents.TarsBase.TarsBase object at 0x100a0f670>>
+2024-11-30 14:33:29.128 | INFO     | utils.Log:info:16 - {'title': '探索未知：个人成长与人类进步的共通之处', 'keyword': ['探索未知', '个人成长', '人类进步', '科技发展', '梦想追求'], 'paragraphs': ["长久以来，人们只能看到月球固定朝向地球的一面，直到'嫦娥四号'探月任务揭开了月背的神秘面纱。这一事件不仅标志着中国在深空探测领域取得了重大突破，同时也象征着人类对未知世界的好奇心和探索精神。", "同样地，随着'天问一号'飞离地球，航天人的目光又投向了更遥远的宇宙深处。这不仅是技术上的飞跃，更是人类对未知领域不懈追求的体现。正如人类的太空之旅，我们每个人的生活旅程中也充满了未知。", '每个人都像是一艘探索未知领域的飞船，面对着生活的各种挑战和机遇。这些挑战和机遇就如同月球背面那样，隐藏在我们的视野之外，等待着我们去发现和征服。正是这种对未知的渴望驱使着我们不断地学习、成长和发展。', '通过不断的探索和努力，我们可以拓宽自己的知识边界，提升自我能力，就像科学家们通过不懈的努力揭开宇宙的秘密一样。同时，这也促使我们更加珍惜和理解身边的一切，培养出一种更为开阔的人生观。', '总之，无论是人类对宇宙奥秘的探索，还是个人对生活意义的追寻，都体现了我们共同的特质——不畏艰难险阻，勇于探索未知的精神。在这个过程中，我们不仅能实现自我价值，也能为社会乃至整个人类文明的进步做出贡献。']}
+2024-11-30 15:02:51.427 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-11-30 15:02:51.427 | INFO     | utils.Log:info:16 - {'default_model': {'model_name': 'qwen-turbo', 'base_url': 'https://dashscope.aliyuncs.com/compatible-mode/v1', 'api_key': 'sk-8bf07486b6bd4f339fcaa59b7286a3ed'}}
+2024-11-30 15:02:56.356 | INFO     | utils.Log:info:16 - Agent ID: b9aac431274a420497982b038f74cb21
+Agent Name: tars
+Agent Role: You are a Chinese language teacher.
+Agent Brain: <YOUR NAME>: tars
+<YOUR ROLE>: You are a Chinese language teacher.
+
+Agent Task: ***REFERENCE EXAMPLES***: 
+No reference examples yet.
+***TOPIC***: 长久以来，人们只能看到月球固定朝向地球的一面，“嫦娥四号”探月任务揭开了月背的神秘面纱；随着“天问一号”飞离地球，航天人的目光又投向遥远的深空……正如人类的太空之旅，我们每个人也都在不断抵达未知之境。
+***PRECAUTION***: 要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；800字左右。
+***INSTRUCTION***:
+这引发了你怎样的联想与思考？请写一篇文章。
+***OUTPUT FORMAT***
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"title": {"title": "Title", "description": "the title of your paper.", "type": "string"}, "keyword": {"title": "Keyword", "description": "3 to 5 theme keywords of your paper.", "type": "array", "items": {"type": "string"}}, "paragraphs": {"title": "Paragraphs", "description": "the paragraphs of your paper.", "type": "array", "items": {"type": "string"}}}, "required": ["title", "keyword", "paragraphs"]}
+```
+
+Agent Answer: ```json
+{
+  "title": "探索未知：从月球背面到内心深处",
+  "keyword": ["太空探索", "未知领域", "个人成长", "梦想追求"],
+  "paragraphs": [
+    "长久以来，人类对月球的了解仅限于其面向地球的一面。直到‘嫦娥四号’成功登陆月球背面，这一神秘面纱才被揭开。这一壮举不仅标志着中国在航天领域的重大突破，更象征着人类对于未知世界的不懈追求。",
+    "随着‘天问一号’的发射，人类的目光再次聚焦于浩瀚宇宙。每一次航天任务的成功，都是人类智慧和勇气的体现。它激励着每一个普通人，去勇敢地面对生活中的未知与挑战。",
+    "正如人类对太空的探索，我们每个人的生命旅程中也充满了未知。无论是职业选择、人际关系还是个人兴趣的发展，都可能遇到未曾预料的情况。关键在于如何面对这些未知，是选择逃避还是勇敢前行。",
+    "探索未知的过程，既是对外部世界的认知过程，也是自我成长的过程。每一次尝试，无论成败，都能让我们更加了解自己，发现自己的潜力。就像航天员们在太空中克服重重困难，我们也需要在人生的旅途中不断学习、适应和成长。",
+    "因此，让我们以航天人为榜样，保持对未知的好奇心和探索精神。无论是在科学探索的前沿，还是在个人成长的路上，都要勇于面对挑战，不断前进。这样，我们才能真正实现自我价值，让生命绽放出更加灿烂的光芒。"
+  ]
+}
+```
+
+2024-11-30 15:07:16.415 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-11-30 15:07:16.415 | INFO     | utils.Log:info:16 - {'default_model': {'model_name': 'qwen-turbo', 'base_url': 'https://dashscope.aliyuncs.com/compatible-mode/v1', 'api_key': 'sk-8bf07486b6bd4f339fcaa59b7286a3ed'}}
+2024-11-30 15:07:23.713 | INFO     | utils.Log:info:16 - Agent ID: 4f98ba117b16475797ad246617c90bf7
+Agent Brain: 
+<YOUR NAME>: tars
+<YOUR ROLE>: You are a Chinese language teacher.
+
+Agent Task: 
+***REFERENCE EXAMPLES***: 
+No reference examples yet.
+***TOPIC***: 长久以来，人们只能看到月球固定朝向地球的一面，“嫦娥四号”探月任务揭开了月背的神秘面纱；随着“天问一号”飞离地球，航天人的目光又投向遥远的深空……正如人类的太空之旅，我们每个人也都在不断抵达未知之境。
+***PRECAUTION***: 要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；800字左右。
+***INSTRUCTION***:
+这引发了你怎样的联想与思考？请写一篇文章。
+***OUTPUT FORMAT***
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"title": {"title": "Title", "description": "the title of your paper.", "type": "string"}, "keyword": {"title": "Keyword", "description": "3 to 5 theme keywords of your paper.", "type": "array", "items": {"type": "string"}}, "paragraphs": {"title": "Paragraphs", "description": "the paragraphs of your paper.", "type": "array", "items": {"type": "string"}}}, "required": ["title", "keyword", "paragraphs"]}
+```
+
+Agent Answer: ```json
+{
+  "title": "探索未知：从月球背面到心灵深处",
+  "keyword": ["探索", "未知", "勇气", "梦想"],
+  "paragraphs": [
+    "长久以来，人们只能看到月球固定朝向地球的一面，而‘嫦娥四号’探月任务揭开了月球背面的神秘面纱。这一壮举不仅标志着中国在航天领域的重大突破，更象征着人类对未知世界的不懈追求。",
+    "随着‘天问一号’飞离地球，航天人的目光又投向了更加遥远的深空。这种对未知的渴望和探索精神，如同一盏明灯，照亮了人类前行的道路。正如人类的太空之旅，我们每个人也在不断抵达未知之境。",
+    "探索未知需要勇气。面对未知，我们可能会感到恐惧和不安，但正是这种挑战激发了我们的潜能。就像航天员们在太空中克服重重困难，我们也应该勇敢地面对生活中的挑战。",
+    "探索未知也是一种梦想。梦想是推动我们前进的动力。无论是航天人对宇宙奥秘的向往，还是普通人对美好生活的憧憬，都是梦想的力量在起作用。梦想让我们超越自我，追求更高的目标。",
+    "在这个过程中，我们学会了坚持和努力。每一次尝试都可能带来新的发现，每一次失败都是通往成功的一步。正如航天人在无数次试验后终于实现了登月的梦想，我们也应该相信，只要坚持不懈，就没有什么是不可能的。"
+  ]
+}
+```
+
+2024-11-30 15:08:07.759 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-11-30 15:08:07.759 | INFO     | utils.Log:info:16 - {'default_model': {'model_name': 'qwen-turbo', 'base_url': 'https://dashscope.aliyuncs.com/compatible-mode/v1', 'api_key': 'sk-8bf07486b6bd4f339fcaa59b7286a3ed'}}
+2024-11-30 15:08:16.057 | INFO     | utils.Log:info:16 - Agent ID: f40919a679254ee88622a01ff099fc0e
+Agent Brain: 
+<YOUR NAME>: tars
+<YOUR ROLE>: You are a Chinese language teacher.
+
+Agent Task: 
+***REFERENCE EXAMPLES***: 
+No reference examples yet.
+***TOPIC***: 长久以来，人们只能看到月球固定朝向地球的一面，“嫦娥四号”探月任务揭开了月背的神秘面纱；随着“天问一号”飞离地球，航天人的目光又投向遥远的深空……正如人类的太空之旅，我们每个人也都在不断抵达未知之境。
+***PRECAUTION***: 要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；800字左右。
+***INSTRUCTION***:
+这引发了你怎样的联想与思考？请写一篇文章。
+***OUTPUT FORMAT***
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"title": {"title": "Title", "description": "the title of your paper.", "type": "string"}, "keyword": {"title": "Keyword", "description": "3 to 5 theme keywords of your paper.", "type": "array", "items": {"type": "string"}}, "paragraphs": {"title": "Paragraphs", "description": "the paragraphs of your paper.", "type": "array", "items": {"type": "string"}}}, "required": ["title", "keyword", "paragraphs"]}
+```
+
+Agent Answer: ```json
+{
+  "title": "探索未知：从月球背面到内心深处",
+  "keyword": ["探索", "未知", "勇气", "梦想"],
+  "paragraphs": [
+    "长久以来，人们只能看到月球固定朝向地球的一面，直到‘嫦娥四号’探月任务揭开了月背的神秘面纱。这一壮举不仅标志着中国在航天领域的重大突破，更象征着人类对未知世界的不懈追求。",
+    "随着‘天问一号’飞离地球，航天人的目光又投向了遥远的深空。这种对未知的渴望和探索，不仅仅是科技的进步，更是人类精神的一种体现。正如古人云：‘路漫漫其修远兮，吾将上下而求索。’",
+    "人类的太空之旅，不仅仅是在物理空间上的探索，更是一种心灵上的旅行。每一次对未知的挑战，都是对自我极限的突破。这种精神，激励着每一个普通人，在自己的生活中不断前行，勇敢地面对未知。",
+    "我们每个人的生活都充满了未知，无论是职业的选择、人际关系的建立，还是个人梦想的实现。就像航天员们面对浩瀚宇宙时的那份坚定与勇气，我们也需要在面对生活中的困难和挑战时，保持同样的决心和毅力。",
+    "因此，让我们以‘嫦娥四号’和‘天问一号’为榜样，勇敢地踏上探索未知的旅程。无论是在星辰大海中寻找答案，还是在平凡生活中寻找意义，重要的是保持一颗探索的心，不断前进，不断超越。"
+  ]
+}
+```
+
+2024-11-30 15:08:16.064 | INFO     | utils.Log:info:16 - TaskStatus.SUCCESS
+2024-11-30 15:08:16.064 | INFO     | utils.Log:info:16 - {'title': '探索未知：从月球背面到内心深处', 'keyword': ['探索', '未知', '勇气', '梦想'], 'paragraphs': ['长久以来，人们只能看到月球固定朝向地球的一面，直到‘嫦娥四号’探月任务揭开了月背的神秘面纱。这一壮举不仅标志着中国在航天领域的重大突破，更象征着人类对未知世界的不懈追求。', '随着‘天问一号’飞离地球，航天人的目光又投向了遥远的深空。这种对未知的渴望和探索，不仅仅是科技的进步，更是人类精神的一种体现。正如古人云：‘路漫漫其修远兮，吾将上下而求索。’', '人类的太空之旅，不仅仅是在物理空间上的探索，更是一种心灵上的旅行。每一次对未知的挑战，都是对自我极限的突破。这种精神，激励着每一个普通人，在自己的生活中不断前行，勇敢地面对未知。', '我们每个人的生活都充满了未知，无论是职业的选择、人际关系的建立，还是个人梦想的实现。就像航天员们面对浩瀚宇宙时的那份坚定与勇气，我们也需要在面对生活中的困难和挑战时，保持同样的决心和毅力。', '因此，让我们以‘嫦娥四号’和‘天问一号’为榜样，勇敢地踏上探索未知的旅程。无论是在星辰大海中寻找答案，还是在平凡生活中寻找意义，重要的是保持一颗探索的心，不断前进，不断超越。']}
+2024-11-30 16:40:41.762 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-11-30 16:40:41.763 | INFO     | utils.Log:info:16 - {'default_model': {'model_name': 'qwen-turbo', 'base_url': 'https://dashscope.aliyuncs.com/compatible-mode/v1', 'api_key': 'sk-8bf07486b6bd4f339fcaa59b7286a3ed'}}
+2024-11-30 16:40:49.809 | INFO     | utils.Log:info:16 - 
+Agent ID: d804f0eccf7f4a0c80dad6c8b7a027c3
+Agent Brain: 
+<YOUR NAME>: tars
+<YOUR ROLE>: You are a Chinese language teacher.
+
+Agent Task: 
+***TOPIC***: 长久以来，人们只能看到月球固定朝向地球的一面，“嫦娥四号”探月任务揭开了月背的神秘面纱；随着“天问一号”飞离地球，航天人的目光又投向遥远的深空……正如人类的太空之旅，我们每个人也都在不断抵达未知之境。
+***PRECAUTION***: 要求：选准角度，确定立意，明确文体，自拟标题；不要套作，不得抄袭；不得泄露个人信息；800字左右。
+***INSTRUCTION***:
+这引发了你怎样的联想与思考？请写一篇文章。
+***REFERENCE EXAMPLES***: 
+No reference examples yet.
+***OUTPUT FORMAT***
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"title": {"title": "Title", "description": "the title of your paper.", "type": "string"}, "keyword": {"title": "Keyword", "description": "3 to 5 theme keywords of your paper.", "type": "array", "items": {"type": "string"}}, "paragraphs": {"title": "Paragraphs", "description": "the paragraphs of your paper.", "type": "array", "items": {"type": "string"}}}, "required": ["title", "keyword", "paragraphs"]}
+```
+
+Agent Answer: ```json
+{
+  "title": "探索未知：从月球背面到内心深处",
+  "keyword": ["未知之境", "探索精神", "航天科技", "人类进步"],
+  "paragraphs": [
+    "长久以来，人们对月球的认识仅限于它固定朝向地球的一面。然而，‘嫦娥四号’探月任务的成功，不仅让我们首次看到了月球背面的景象，更激发了人类对未知世界的好奇心和探索欲望。",
+    "随着‘天问一号’的发射，中国航天事业迈出了新的一步，将目光投向了更加遥远的宇宙深处。这一系列的航天活动不仅是技术上的突破，更是人类精神的一次飞跃。",
+    "正如人类在太空中不断探索未知一样，我们每个人也在生活的旅途中不断地面对和克服未知的挑战。无论是学习新知识、尝试新事物，还是面对生活中的困难，这些经历都像是一次次的‘太空之旅’。",
+    "每一次对未知领域的探索，都是对自我能力的检验和提升。就像航天员需要经过严格的训练才能适应太空环境，我们在日常生活中也需要不断学习和成长，以应对各种未知的情况。",
+    "在这个过程中，我们不仅能够发现世界的奥秘，也能更好地认识自己。每一次成功的探索，都是对自己潜力的一次挖掘，也是对人生价值的一种实现。",
+    "因此，无论是在浩瀚的宇宙中寻找答案，还是在个人成长的道路上不断前行，探索未知的精神都是推动人类进步的重要力量。让我们带着这份勇气和好奇心，继续勇敢地迈向未知的世界。"
+  ]
+}
+```
+
+2024-11-30 16:40:49.815 | INFO     | utils.Log:info:16 - TaskStatus.SUCCESS
+2024-11-30 16:40:49.815 | INFO     | utils.Log:info:16 - {'title': '探索未知：从月球背面到内心深处', 'keyword': ['未知之境', '探索精神', '航天科技', '人类进步'], 'paragraphs': ['长久以来，人们对月球的认识仅限于它固定朝向地球的一面。然而，‘嫦娥四号’探月任务的成功，不仅让我们首次看到了月球背面的景象，更激发了人类对未知世界的好奇心和探索欲望。', '随着‘天问一号’的发射，中国航天事业迈出了新的一步，将目光投向了更加遥远的宇宙深处。这一系列的航天活动不仅是技术上的突破，更是人类精神的一次飞跃。', '正如人类在太空中不断探索未知一样，我们每个人也在生活的旅途中不断地面对和克服未知的挑战。无论是学习新知识、尝试新事物，还是面对生活中的困难，这些经历都像是一次次的‘太空之旅’。', '每一次对未知领域的探索，都是对自我能力的检验和提升。就像航天员需要经过严格的训练才能适应太空环境，我们在日常生活中也需要不断学习和成长，以应对各种未知的情况。', '在这个过程中，我们不仅能够发现世界的奥秘，也能更好地认识自己。每一次成功的探索，都是对自己潜力的一次挖掘，也是对人生价值的一种实现。', '因此，无论是在浩瀚的宇宙中寻找答案，还是在个人成长的道路上不断前行，探索未知的精神都是推动人类进步的重要力量。让我们带着这份勇气和好奇心，继续勇敢地迈向未知的世界。']}

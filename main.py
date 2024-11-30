@@ -40,10 +40,10 @@ if __name__ == "__main__":
 
     task = TaskBase(context=context, instruction=instruction, output_parser=output_parser)
     tars = TarsBase(name=name, role=role, llm_config=llm_config['default_model'])
-    logger.info(tars)
     task_with_answer = tars.answer(task)
 
-    logger.info(task_with_answer.answer)
+    logger.info(task_with_answer.status)
+    logger.info(task_with_answer.formatted_answer)
 
     
     # response = model.invoke([HumanMessage(content="Hi! I'm Bob")])

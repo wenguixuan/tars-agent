@@ -1,0 +1,50 @@
+FGITool:
+  tool_name: FGI
+  tool_description: FGI
+  tool_type: API
+  day_delay: 0
+  examples: []
+  apis:
+    fgi:
+      api_name: FGI
+      api_description: Index calculated by https://money.cnn.com/data/fear-and-greed/
+      api_url: https://fear-and-greed-index.p.rapidapi.com/v1/fgi
+      api_method: GET
+      api_params: {}
+      default_headers: 
+        x-rapidapi-key: xx
+        x-rapidapi-host: fear-and-greed-index.p.rapidapi.com
+
+WeatherTool:
+  tool_name: Weather
+  tool_description: Query weather information
+  tool_type: API
+  day_delay: 0
+  examples: []
+  apis:
+    current_weather:
+      api_name: current_weather
+      api_description: Query current weather information
+      api_url: https://open-weather13.p.rapidapi.com/city/
+      api_method: GET
+      api_params:
+        city:
+          param_name: city
+          llm_param_name: city
+          param_zh_name: 城市
+          param_description: City name, must be in English
+          param_type: STRING
+          param_required: True
+        lang:
+          param_name: lang
+          llm_param_name: lang
+          param_zh_name: 返回结果语言
+          param_description: Language
+          param_type: STRING
+          param_required: False
+          is_enum: True
+          enum_values: ['ZH', 'EN']
+
+      default_headers: 
+        x-rapidapi-key: xxx
+        x-rapidapi-host: open-weather13.p.rapidapi.com

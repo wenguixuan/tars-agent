@@ -1,12 +1,13 @@
 from abc import ABC, abstractmethod
 from datetime import datetime, timedelta
 from typing import List
-
+from enum import Enum
+from config.ConfigLoader import ConfigLoader
 from examples.ExampleBase import ExampleBase
 
-class ToolType:
-    API = 'api'
-    FUNCTION = 'function'
+class ToolType(Enum):
+    API = 'API'
+    FUNCTION = 'FUNCTION'
 
 class ToolBase(ABC):
     def __init__(self, tool_name:str, tool_description: str, tool_type: ToolType, day_delay: int=0, examples: List[ExampleBase]=[]) -> None:
@@ -19,5 +20,19 @@ class ToolBase(ABC):
     @abstractmethod
     def execute(**kwargs):
         pass
+
+    def import_tools_from_yaml(base_path: str, yaml_path: str) -> List:
+        from tools.ApiTool import ApiTool  # Move import here
+        config_loader = ConfigLoader(base_path)
+        tools_config = config_loader.read_yaml(yaml_path)
+        tools = []
+
+        for tool_name in tools_config:
+            if tools_config[tool_name].get('tool_type', '') == ToolType.API.value:
+                tools.append(ApiTool.factory(tools_config[tool_name]))
+            else:
+                raise ValueError(f'Unsupported tool type: {tools_config[tool_name].get("tool_type", "")}')
+
+        return tools
 
 

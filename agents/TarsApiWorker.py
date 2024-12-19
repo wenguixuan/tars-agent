@@ -55,7 +55,7 @@ class TarsApiWorker(TarsWorker):
         system_date = self.tool.tool_system_date
         chat_history_str = ''
         context = {}
-        context['tool'] = self.tool
+        context['tool'] = f'\n{self.tool}'
         context['system date'] = system_date
         if len(self.chat_history) > 0:
             chat_history_str = ''
@@ -71,7 +71,7 @@ class TarsApiWorker(TarsWorker):
         else:
             instruction = self.instructions['plan']
         output_parser = JsonOutputParser(pydantic_object=ApiAnswer)
-        task = TaskBase(context=context, instruction=instruction, precautions=self.precautions, examples=self.tool.examples, output_parser=output_parser, task_type='api_worker')
+        task = TaskBase(context=context, instruction=instruction, precautions=self.precautions, examples=self.tool.examples, output_parser=output_parser)
         return task
 
     def answer(self, sender_id: str, sender_name: str, sender_role: str, request: str, is_plan: bool=True, is_review: bool=False, is_execute: bool=False):
@@ -94,7 +94,35 @@ class TarsApiWorker(TarsWorker):
     
 
     def execute(self, sender_id: str, sener_name:str, sender_role: str, request: str):
-        pass
+        task = self.build_task(request, is_review=False)
+        TarsBase.answer(self, task)
+
+        if task.status == TaskStatus.SUCCESS:
+            selected_apis = task.formatted_answer.get('apis', {})
+            if len(selected_apis) == 0:
+                return None
+            
+
+            results = self.tool.execute(selected_apis)
+
+            answer = ""
+
+            for result in results:
+                answer += f"call api: `{result[0]}`, got: \n{result[1]}\n"
+            
+            message = MessageBase(sender_id=self.id, 
+                               sender_name=self.name, 
+                               sender_role='worker',
+                               receiver_id=sender_id,
+                               receiver_name=sener_name,
+                               receiver_role=sender_role,
+                               content=answer,
+                               type=MessageType.INFORMATION)
+            return message
+        else:
+            return None
+
+        
     
     def review(self, sender_id: str, sener_name:str, sender_role: str, request: str):
         pass

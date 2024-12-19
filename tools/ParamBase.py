@@ -13,7 +13,7 @@ class Params():
         self.param_zh_name = param_zh_name
         self.param_description = param_description
         if param_type in [ParamsType.STRING.value, ParamsType.INTEGER.value]:   
-            self.param_type: ParamsType = param_type
+            self.param_type = param_type
         else:
             raise ValueError(f'Invalid param type: {param_type}')
         self.param_type: ParamsType = ParamsType(param_type)

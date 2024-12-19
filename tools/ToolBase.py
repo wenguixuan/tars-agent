@@ -28,7 +28,9 @@ class ToolBase(ABC):
         tools = []
 
         for tool_name in tools_config:
-            if tools_config[tool_name].get('tool_type', '') == ToolType.API.value:
+            tool_type = tools_config[tool_name].get('tool_type', '').lower()
+            
+            if tool_type == ToolType.API.value.lower():
                 tools.append(ApiTool.factory(tools_config[tool_name]))
             else:
                 raise ValueError(f'Unsupported tool type: {tools_config[tool_name].get("tool_type", "")}')

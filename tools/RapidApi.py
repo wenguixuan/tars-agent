@@ -40,10 +40,9 @@ class RapidApi(ApiBase):
             else:
                 raise NotImplementedError('RapidApi.execute only supports GET method')
             print("response.text: ", response.text)
-            result = pd.DataFrame(json.loads(response.text))
+            result = pd.json_normalize(json.loads(response.text))
         except Exception as e:
             traceback.print_exc()
-            print(restful_url)
             result = pd.DataFrame({'Error': [f'API request failed with error: {e}']})
 
         return api_signature, result

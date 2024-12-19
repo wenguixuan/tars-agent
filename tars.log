@@ -220,3 +220,260 @@ Agent Answer: ```json
 2024-12-10 22:00:48.966 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
 2024-12-10 22:01:57.948 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
 2024-12-10 22:02:50.310 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:36:19.663 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:39:20.104 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:40:59.094 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:42:03.974 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:43:05.915 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:43:43.516 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:49:52.252 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:52:37.874 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:57:38.735 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:57:54.972 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 12:59:03.320 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:00:55.019 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:01:57.294 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:03:03.845 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:04:05.385 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:05:02.633 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:06:23.743 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:06:50.859 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:13:25.002 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:15:41.654 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-12-19 13:15:41.660 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:16:11.219 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-12-19 13:16:11.222 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:18:23.258 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-12-19 13:18:23.263 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:19:35.822 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-12-19 13:19:35.826 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:19:37.001 | INFO     | utils.Log:info:16 - 
+Agent ID: 7326a62b190d4105a20163ce9e5b6a4e
+Agent Brain: 
+<YOUR NAME>: TarsApiWorker
+<YOUR ROLE>: You are a helpful assistant. You manager a tool with APIs. Please understand the request carefully and select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+
+Agent Task: 
+***TOOL***: TOOL_NAME: FGI
+TOOL_DESCRIPTION: FGI
+TOOL_TYPE: ToolType.API
+TOOL_SYSTEM_DATE: 2024-12-19
+EXAMPLES:
+APIS:
+DEFINITION: fgi()   USAGE: Index calculated by https://money.cnn.com/data/fear-and-greed/
+***SYSTEM DATE***: 2024-12-19
+***REQUEST***: FGI指数是多少
+***INSTRUCTION***:
+According to the request, select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+***REFERENCE EXAMPLES***: 
+No reference examples yet.
+***OUTPUT FORMAT***
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"apis": {"additionalProperties": {"additionalProperties": {"type": "string"}, "type": "object"}, "description": "the APIs and parameters you selected. The key of the dictionary is the API name, and the value is a dictionary of parameters and their values. If there is no suitable API, you can return empty dictionary.", "title": "Apis", "type": "object"}}, "required": ["apis"]}
+```
+***PRECAUTIONS***:
+1. If there is no suitable API, you can return empty dictionary.
+2. The selected APIs and parameters must be correct and feasible.
+3. Strictly follow the request and do not make any assumptions.
+4. Strictly follow the output format.
+
+Agent Answer: ```json
+{
+  "apis": {
+    "fgi": {}
+  }
+}
+```
+
+2024-12-19 13:22:05.426 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-12-19 13:22:05.430 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:22:06.556 | INFO     | utils.Log:info:16 - 
+Agent ID: 3472a50ef1b94543af49a69166714e28
+Agent Brain: 
+<YOUR NAME>: TarsApiWorker
+<YOUR ROLE>: You are a helpful assistant. You manager a tool with APIs. Please understand the request carefully and select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+
+Agent Task: 
+***TOOL***: TOOL_NAME: FGI
+TOOL_DESCRIPTION: FGI
+TOOL_TYPE: ToolType.API
+TOOL_SYSTEM_DATE: 2024-12-19
+EXAMPLES:
+APIS:
+DEFINITION: fgi()   USAGE: Index calculated by https://money.cnn.com/data/fear-and-greed/
+***SYSTEM DATE***: 2024-12-19
+***REQUEST***: FGI指数是多少
+***INSTRUCTION***:
+According to the request, select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+***REFERENCE EXAMPLES***: 
+No reference examples yet.
+***OUTPUT FORMAT***
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"apis": {"additionalProperties": {"additionalProperties": {"type": "string"}, "type": "object"}, "description": "the APIs and parameters you selected. The key of the dictionary is the API name, and the value is a dictionary of parameters and their values. If there is no suitable API, you can return empty dictionary.", "title": "Apis", "type": "object"}}, "required": ["apis"]}
+```
+***PRECAUTIONS***:
+1. If there is no suitable API, you can return empty dictionary.
+2. The selected APIs and parameters must be correct and feasible.
+3. Strictly follow the request and do not make any assumptions.
+4. Strictly follow the output format.
+
+Agent Answer: ```json
+{
+  "apis": {
+    "fgi": {}
+  }
+}
+```
+
+2024-12-19 13:24:00.916 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-12-19 13:24:00.919 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:24:01.931 | INFO     | utils.Log:info:16 - 
+Agent ID: 0781317fbf994b9e901ba6cb22ddb800
+Agent Brain: 
+<YOUR NAME>: TarsApiWorker
+<YOUR ROLE>: You are a helpful assistant. You manager a tool with APIs. Please understand the request carefully and select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+
+Agent Task: 
+***TOOL***: TOOL_NAME: FGI
+TOOL_DESCRIPTION: FGI
+TOOL_TYPE: ToolType.API
+TOOL_SYSTEM_DATE: 2024-12-19
+EXAMPLES:
+APIS:
+DEFINITION: fgi()   USAGE: Index calculated by https://money.cnn.com/data/fear-and-greed/
+***SYSTEM DATE***: 2024-12-19
+***REQUEST***: FGI指数是多少
+***INSTRUCTION***:
+According to the request, select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+***REFERENCE EXAMPLES***: 
+No reference examples yet.
+***OUTPUT FORMAT***
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"apis": {"additionalProperties": {"additionalProperties": {"type": "string"}, "type": "object"}, "description": "the APIs and parameters you selected. The key of the dictionary is the API name, and the value is a dictionary of parameters and their values. If there is no suitable API, you can return empty dictionary.", "title": "Apis", "type": "object"}}, "required": ["apis"]}
+```
+***PRECAUTIONS***:
+1. If there is no suitable API, you can return empty dictionary.
+2. The selected APIs and parameters must be correct and feasible.
+3. Strictly follow the request and do not make any assumptions.
+4. Strictly follow the output format.
+
+Agent Answer: ```json
+{
+  "apis": {
+    "fgi": {}
+  }
+}
+```
+
+2024-12-19 13:31:45.476 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-12-19 13:31:45.481 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:31:46.348 | INFO     | utils.Log:info:16 - 
+Agent ID: 7839cb445b014dcaaa9c1c10b182e06e
+Agent Brain: 
+<YOUR NAME>: TarsApiWorker
+<YOUR ROLE>: You are a helpful assistant. You manager a tool with APIs. Please understand the request carefully and select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+
+Agent Task: 
+***TOOL***: 
+TOOL_NAME: FGI
+TOOL_DESCRIPTION: FGI
+TOOL_TYPE: ToolType.API
+TOOL_SYSTEM_DATE: 2024-12-19
+EXAMPLES:
+APIS:
+DEFINITION: fgi()   USAGE: Index calculated by https://money.cnn.com/data/fear-and-greed/
+***SYSTEM DATE***: 2024-12-19
+***REQUEST***: FGI指数是多少
+***INSTRUCTION***:
+According to the request, select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+***REFERENCE EXAMPLES***: 
+No reference examples yet.
+***OUTPUT FORMAT***
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"apis": {"additionalProperties": {"additionalProperties": {"type": "string"}, "type": "object"}, "description": "the APIs and parameters you selected. The key of the dictionary is the API name, and the value is a dictionary of parameters and their values. If there is no suitable API, you can return empty dictionary.", "title": "Apis", "type": "object"}}, "required": ["apis"]}
+```
+***PRECAUTIONS***:
+1. If there is no suitable API, you can return empty dictionary.
+2. The selected APIs and parameters must be correct and feasible.
+3. Strictly follow the request and do not make any assumptions.
+4. Strictly follow the output format.
+
+Agent Answer: ```json
+{
+  "apis": {
+    "fgi": {}
+  }
+}
+```
+
+2024-12-19 13:39:49.938 | DEBUG    | utils.Log:debug:13 - loaded llm.yaml finished...
+2024-12-19 13:39:49.941 | DEBUG    | utils.Log:debug:13 - loaded RapidApiTool.yaml finished...
+2024-12-19 13:39:51.064 | INFO     | utils.Log:info:16 - 
+Agent ID: d53c9b93e8584d629db1f6b1c5e521df
+Agent Brain: 
+<YOUR NAME>: TarsApiWorker
+<YOUR ROLE>: You are a helpful assistant. You manager a tool with APIs. Please understand the request carefully and select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+
+Agent Task: 
+***TOOL***: 
+TOOL_NAME: FGI
+TOOL_DESCRIPTION: FGI
+TOOL_TYPE: ToolType.API
+TOOL_SYSTEM_DATE: 2024-12-19
+EXAMPLES:
+APIS:
+DEFINITION: fgi()   USAGE: Index calculated by https://money.cnn.com/data/fear-and-greed/
+***SYSTEM DATE***: 2024-12-19
+***REQUEST***: FGI指数是多少
+***INSTRUCTION***:
+According to the request, select the most appropriate API and parameters. If there is no suitable API, you can return empty dictionary.
+***REFERENCE EXAMPLES***: 
+No reference examples yet.
+***OUTPUT FORMAT***
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"apis": {"additionalProperties": {"additionalProperties": {"type": "string"}, "type": "object"}, "description": "the APIs and parameters you selected. The key of the dictionary is the API name, and the value is a dictionary of parameters and their values. If there is no suitable API, you can return empty dictionary.", "title": "Apis", "type": "object"}}, "required": ["apis"]}
+```
+***PRECAUTIONS***:
+1. If there is no suitable API, you can return empty dictionary.
+2. The selected APIs and parameters must be correct and feasible.
+3. Strictly follow the request and do not make any assumptions.
+4. Strictly follow the output format.
+
+Agent Answer: ```json
+{
+  "apis": {
+    "fgi": {}
+  }
+}
+```
+

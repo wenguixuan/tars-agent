@@ -29,14 +29,12 @@ class ApiTool(ToolBase):
     def factory(tool_config: dict) -> List:
         tool_name = tool_config.get('tool_name', '')
         tool_description = tool_config.get('tool_description', '')
-        tool_type = tool_config.get('tool_type', '')
         day_delay = tool_config.get('day_delay', 0)
         examples = tool_config.get('examples', [])
         apis_config = tool_config.get('apis', {})
         apis = []
         for api_name, api_config in apis_config.items():
             params_config = api_config.get('api_params', {})
-            print(params_config)
             api_params = [Params(**param) for param in params_config.values()]
             api = RapidApi(api_name, api_config.get('api_description', ''), api_config.get('api_url', ''), api_config.get('api_method', 'GET'), api_config.get('default_headers', {}), api_params)
             apis.append(api)

@@ -2,12 +2,13 @@
 import uuid
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
+from agents.TarsAgentType import TarsAgentType
 from tasks.TaskBase import TaskBase, TaskStatus
 from utils.Log import Log
 
 
 class TarsBase(object):
-    def __init__(self, role: str, name: str, llm_config=None, max_retry_times=2) -> None:
+    def __init__(self, role: str, name: str, llm_config: dict=None, max_retry_times: int=2, agent_type: TarsAgentType=TarsAgentType.Default) -> None:
         assert name is not None and isinstance(name, str) and len(name.replace(' ', '')) > 0, Exception('tars agnet must be given a specific name, which must be a non-empty string.')
         assert role is not None and isinstance(role, str) and len(name.replace(' ', '')) > 0, Exception('tars agnet must be given a specific role, which must be a non-empty string.')
         assert llm_config is not None and isinstance(llm_config, dict), Exception('tars agnet must be given a llm config.')
@@ -17,6 +18,7 @@ class TarsBase(object):
         self.id = uuid.uuid4().hex
 
         self.max_retry_times = max_retry_times
+        self.agent_type = agent_type
 
         self.brain = self.init_brain()
 

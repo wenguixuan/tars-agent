@@ -31,12 +31,13 @@ class ApiTool(ToolBase):
         tool_description = tool_config.get('tool_description', '')
         day_delay = tool_config.get('day_delay', 0)
         examples = tool_config.get('examples', [])
+        
         apis_config = tool_config.get('apis', {})
         apis = []
         for api_name, api_config in apis_config.items():
             params_config = api_config.get('api_params', {})
             api_params = [Params(**param) for param in params_config.values()]
-            api = RapidApi(api_name, api_config.get('api_description', ''), api_config.get('api_url', ''), api_config.get('api_method', 'GET'), api_config.get('default_headers', {}), api_params)
+            api = RapidApi(api_name, api_config.get('api_description', ''), api_config.get('api_url', ''), api_config.get('api_method', 'GET'), api_config.get('default_headers', {}),  api_config.get('is_restful', True), api_params)
             apis.append(api)
 
         return ApiTool(tool_name, tool_description, day_delay, apis, examples)

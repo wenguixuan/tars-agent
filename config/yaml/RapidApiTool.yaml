@@ -12,7 +12,7 @@ FGITool:
       api_method: GET
       api_params: {}
       default_headers: 
-        x-rapidapi-key: xx
+        x-rapidapi-key: xxx
         x-rapidapi-host: fear-and-greed-index.p.rapidapi.com
 
 WeatherTool:
@@ -48,3 +48,304 @@ WeatherTool:
       default_headers: 
         x-rapidapi-key: xxx
         x-rapidapi-host: open-weather13.p.rapidapi.com
+
+
+
+MovieTool:
+  tool_name: Movie
+  tool_description: Query movie information
+  tool_type: API
+  day_delay: 0
+  examples: []
+  apis:
+    get_movie_info:
+      api_name: get_movie_info
+      api_description: Query movie information
+      api_url: https://movie-info-api.p.rapidapi.com/movie-info
+      api_method: GET
+      is_restful: False
+      api_params:
+        title:
+          param_name: title
+          llm_param_name: movie_name
+          param_zh_name: 电影名
+          param_description: movie name
+          param_type: STRING
+          param_required: True
+        lang:
+          param_name: lang
+          llm_param_name: lang
+          param_zh_name: 返回结果语言
+          param_description: Language
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['en-US', 'es-ES', 'fr-FR']
+        max_results:
+          param_name: max_results
+          llm_param_name: max_results
+          param_zh_name: 返回搜索结果数
+          param_description: max results
+          param_type: INTEGER
+          param_required: True
+
+      default_headers: 
+        x-rapidapi-key: xxx
+        x-rapidapi-host: movie-info-api.p.rapidapi.com
+
+
+InvestingTool:
+  tool_name: Investing
+  tool_description: Query investing information
+  tool_type: API
+  day_delay: 0
+  examples: []
+  apis:
+    market_data:
+      api_name: market_data
+      api_description: This API is used to retrieve market data, such as indices, stocks, commodities, currencies, crypto, etfs, funds.
+      api_url: https://investing11.p.rapidapi.com/get_market_data
+      api_method: GET
+      is_restful: False
+      api_params:
+        data_type:
+          param_name: data_type
+          llm_param_name: data_type
+          param_zh_name: 数据类型
+          param_description: Type of market data to retrieve. Valid options are indices, stocks, commodities, currencies, crypto, etfs, funds.
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['indices', 'stocks', 'commodities', 'currencies', 'crypto', 'etfs', 'funds']
+        country:
+          param_name: country
+          llm_param_name: country_code
+          param_zh_name: 国家代码
+          param_description: Country code to filter data. Should be a valid 2-letter country code (e.g., US, GB).
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['US', 'GB', 'CN']
+
+      default_headers:
+        x-rapidapi-key: xxx
+        x-rapidapi-host: investing11.p.rapidapi.com
+
+    asset_overview:
+        api_name: Asset Overview
+        api_description: This API is used to retrieve asset overview of company.
+        api_url: https://investing11.p.rapidapi.com/get_stock_overview
+        api_method: GET
+        is_restful: False
+        api_params:
+          symbol:
+            param_name: symbol
+            llm_param_name: symbol
+            param_zh_name: 公司上市代号
+            param_description: Company symbol, such as AAPL/Apple
+            param_type: STRING
+            param_required: True
+
+        default_headers:
+          x-rapidapi-key: xxx
+          x-rapidapi-host: investing11.p.rapidapi.com
+
+    asset_news:
+        api_name: Asset News
+        api_description: This API is used to retrieve asset news of company.
+        api_url: https://investing11.p.rapidapi.com/get_stock_news
+        api_method: GET
+        is_restful: False
+        api_params:
+          symbol:
+            param_name: symbol
+            llm_param_name: symbol
+            param_zh_name: 公司上市代号
+            param_description: Company symbol, such as AAPL/Apple
+            param_type: STRING
+            param_required: True
+
+          page:
+            param_name: page
+            llm_param_name: page
+            param_zh_name: 页码
+            param_description: Page number to retrieve, must be a positive integer.
+            param_type: INTEGER
+            param_required: True
+
+        default_headers:
+          x-rapidapi-key: xxx
+          x-rapidapi-host: investing11.p.rapidapi.com
+
+    asset_articles:
+        api_name: Asset Articles
+        api_description: This API is used to retrieve asset articles of company.
+        api_url: https://investing11.p.rapidapi.com/get_stock_analysis
+        api_method: GET
+        is_restful: False
+        api_params:
+          symbol:
+            param_name: symbol
+            llm_param_name: symbol
+            param_zh_name: 公司上市代号
+            param_description: Company symbol, such as AAPL/Apple
+            param_type: STRING
+            param_required: True
+
+          page:
+            param_name: page
+            llm_param_name: page
+            param_zh_name: 页码
+            param_description: Page number to retrieve, must be a positive integer.
+            param_type: INTEGER
+            param_required: True
+
+        default_headers:
+          x-rapidapi-key: xxx
+          x-rapidapi-host: investing11.p.rapidapi.com
+
+    asset_technical_analysis:
+        api_name: Asset Technical Analysis
+        api_description: This API is used to get stock technical analysis of company.
+        api_url: https://investing11.p.rapidapi.com/get_stock_technical_analysis
+        api_method: GET
+        is_restful: False
+        api_params:
+          symbol:
+            param_name: symbol
+            llm_param_name: symbol
+            param_zh_name: 公司上市代号
+            param_description: Company symbol, such as AAPL/Apple
+            param_type: STRING
+            param_required: True
+
+        default_headers:
+          x-rapidapi-key: xxx
+          x-rapidapi-host: investing11.p.rapidapi.com
+
+    economic_calendar:
+      api_name: Economic Calendar
+      api_description: This API is used to retrieve economic events.
+      api_url: https://investing11.p.rapidapi.com/get_economic_calendar
+      api_method: GET
+      is_restful: False
+      api_params:
+        time_interval:
+          param_name: time_interval
+          llm_param_name: time_interval
+          param_zh_name: 时间区间
+          param_description: Time interval for calendars. Valid options are today, tomorrow, this_week, next_week, yesterday.
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['today', 'tomorrow', 'this_week', 'next_week', 'yesterday']
+
+        country:
+          param_name: country
+          llm_param_name: country_code
+          param_zh_name: 国家代码
+          param_description: Country code to filter data. Should be a valid 2-letter country code (e.g., US, GB).
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['US', 'GB', 'CN']
+
+      default_headers:
+        x-rapidapi-key: xxx
+        x-rapidapi-host: investing11.p.rapidapi.com
+
+    earnings_calendar:
+      api_name: Earnings Calendar
+      api_description: This API is used to retrieve earnings calendar.
+      api_url: https://investing11.p.rapidapi.com/get_earnings_calendar
+      api_method: GET
+      is_restful: False
+      api_params:
+        time_interval:
+          param_name: time_interval
+          llm_param_name: time_interval
+          param_zh_name: 时间区间
+          param_description: Time interval for calendars. Valid options are today, tomorrow, this_week, next_week, yesterday.
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['today', 'tomorrow', 'this_week', 'next_week', 'yesterday']
+
+        country:
+          param_name: country
+          llm_param_name: country_code
+          param_zh_name: 国家代码
+          param_description: Country code to filter data. Should be a valid 2-letter country code (e.g., US, GB).
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['US', 'GB', 'CN']
+
+      default_headers:
+        x-rapidapi-key: xxx
+        x-rapidapi-host: investing11.p.rapidapi.com
+
+    dividend_calendar:
+      api_name: Dividend Calendar
+      api_description: This API is used to retrieve dividend calendar.
+      api_url: https://investing11.p.rapidapi.com/get_dividend_calendar
+      api_method: GET
+      is_restful: False
+      api_params:
+        time_interval:
+          param_name: time_interval
+          llm_param_name: time_interval
+          param_zh_name: 时间区间
+          param_description: Time interval for calendars. Valid options are today, tomorrow, this_week, next_week, yesterday.
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['today', 'tomorrow', 'this_week', 'next_week', 'yesterday']
+
+        country:
+          param_name: country
+          llm_param_name: country_code
+          param_zh_name: 国家代码
+          param_description: Country code to filter data. Should be a valid 2-letter country code (e.g., US, GB).
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['US', 'GB', 'CN']
+
+      default_headers:
+        x-rapidapi-key: xxx
+        x-rapidapi-host: investing11.p.rapidapi.com
+
+    ipo_calendar:
+      api_name: IPO Calendar
+      api_description: This API is used to retrieve ipo calendar.
+      api_url: https://investing11.p.rapidapi.com/get_ipo_calendar
+      api_method: GET
+      is_restful: False
+      api_params:
+        time_interval:
+          param_name: time_interval
+          llm_param_name: time_interval
+          param_zh_name: 时间区间
+          param_description: Time interval for calendars. Valid options are upcoming, recent.
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['upcoming', 'recent']
+
+        country:
+          param_name: country
+          llm_param_name: country_code
+          param_zh_name: 国家代码
+          param_description: Country code to filter data. Should be a valid 2-letter country code (e.g., US, GB).
+          param_type: STRING
+          param_required: True
+          is_enum: True
+          enum_values: ['US', 'GB', 'CN']
+
+      default_headers:
+        x-rapidapi-key: xxx
+        x-rapidapi-host: investing11.p.rapidapi.com
+
+
+

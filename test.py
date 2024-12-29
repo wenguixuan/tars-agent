@@ -1,6 +1,11 @@
 
 
+import json
+import sys
+
+from langserve import RemoteRunnable
 from agents.TarsApiWorker import TarsApiWorker
+from agents.TarsManager import ActionType, ManagerAnswer, TarsManager
 from tools.ApiBase import ApiMethod
 from tools.ParamBase import Params, ParamsType
 from tools.RapidApi import RapidApi
@@ -11,35 +16,31 @@ from config.ConfigLoader import ConfigLoader
 
 
 if __name__ == '__main__':
-    base_path = 'config/yaml/'
-    tool_yaml_path = 'RapidApiTool.yaml'
 
-    config_loader = ConfigLoader(base_url=base_path)
-    llm_config = config_loader.read_yaml("llm.yaml")
-    logger = Log()
+    # user_request = sys.argv[1]
+
+    # base_path = 'config/yaml/'
+    # tool_yaml_path = 'RapidApiTool.yaml'
+
+    # config_loader = ConfigLoader(base_url=base_path)
+    # llm_config = config_loader.read_yaml("llm.yaml")
+    # logger = Log()
     
-    tools = ToolBase.import_tools_from_yaml(base_path, tool_yaml_path)
-    workers = []
-    for tool in tools:
-        print(tool)
+    # tools = ToolBase.import_tools_from_yaml(base_path, tool_yaml_path)
+    # workers = []
+    # for idx, tool in enumerate(tools):
 
-        worker = TarsApiWorker(tool=tool, llm_config=llm_config['default_model'])
-        message = worker.answer(sender_id='-1', sender_name='TarsManager', sender_role='manager',
-                      request='FGI指数是多少', is_plan=False, is_execute=True)
-        print(message)
-        print("="*10)
-        break
+    #     worker = TarsApiWorker(name=f'worker_{idx}', tool=tool, llm_config=llm_config['manager'])
+    #     workers.append(worker)
+
+    # manager = TarsManager(name='manager', workers=workers, llm_config=llm_config['manager'])
+    # manager.answer(user_request)
+
+
+
+    joke_chain = RemoteRunnable("http://localhost:8100/joker/")
+
+    joke_chain.invoke({"topic": "parrots"})
 
     
-
-
-
-
-    # selected_api_and_params = {
-    #     'current_weather': {'city': 'shenzhen', 'lang': 'ZH'}
-    # }
-    # results = tools[1].execute(selected_api_and_params)
-    # for result in results:
-    #     df = df_format(result[1], max_column=result[1].shape[1])
-    #     print(df)
     

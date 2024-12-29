@@ -1,6 +1,7 @@
 
 
 from enum import Enum
+from typing import Union
 from pydantic import BaseModel
 
 class MessageType(Enum):
@@ -12,11 +13,11 @@ class MessageType(Enum):
 
 
 class MessageBase(BaseModel):
-    sender_id: str
-    sender_name: str
-    sender_role: str
-    receiver_id: str
-    receiver_name: str
-    receiver_role: str
-    content: str
+    sender_id: Union[str, None]
+    sender_name: Union[str, None]
+    sender_role: Union[str, None]
+    receiver_id: Union[str, None]
+    receiver_name: Union[str, None]
+    receiver_role: Union[str, None]
+    content: Union[str, None]
     type: MessageType

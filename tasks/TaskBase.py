@@ -2,6 +2,7 @@ from enum import Enum
 from typing import Dict, List
 
 from examples.ExampleBase import ExampleBase
+from langchain_core.output_parsers import JsonOutputParser
 
 class TaskStatus(Enum):
     NOT_STARTED = 'NOT_STARTED'
@@ -9,7 +10,7 @@ class TaskStatus(Enum):
     SUCCESS = 'SUCCESS'
 
 class TaskBase(object):
-    def __init__(self, context:Dict[str, str], instruction: str, precautions: List[str]=[], examples: List[ExampleBase] = [], output_parser=None, identifier='***') -> None:
+    def __init__(self, context:Dict[str, str], instruction: str, precautions: List[str]=[], examples: List[ExampleBase] = [], output_parser: JsonOutputParser=None, identifier='***') -> None:
         self.identifier = identifier
         self.context = context
         if len(context) == 0:

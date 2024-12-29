@@ -1,4 +1,11 @@
 default_model:
-  model_name: qwen-turbo
-  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
-  api_key: xx
+  model_name: ep-20241225102429-22vn4
+  base_url: https://ark.cn-beijing.volces.com/api/v3
+  api_key: xxx
+
+# manager:
+#   model_name: ep-20241225203916-mvf77
+#   base_url: https://ark.cn-beijing.volces.com/api/v3
+#   api_key: xxx
+
+  
